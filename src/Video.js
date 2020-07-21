@@ -595,6 +595,7 @@ class Video extends Component {
 		var vendor = (navigator && navigator.vendor || '').toLowerCase()
 		var matchChrome = /google inc/.test(vendor) ? userAgent.match(/(?:chrome|crios)\/(\d+)/) : null
 		var matchFirefox = userAgent.match(/(?:firefox|fxios)\/(\d+)/)
+		return true
 		return matchChrome !== null || matchFirefox !== null
 	}
 
